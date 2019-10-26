@@ -1,0 +1,51 @@
+{
+    "resourceName": "lex029592a9",
+    "botName": "alan",
+    "intents": [
+        {
+            "slots": [
+                {
+                    "name": "RemindType",
+                    "type": "ReminderTypeValue",
+                    "prompt": "What type of reminder?",
+                    "required": false,
+                    "customType": true
+                },
+                {
+                    "name": "RemindDays",
+                    "type": "AMAZON.DayOfWeek",
+                    "prompt": "Which days of the week would you like to be reminded?",
+                    "required": false,
+                    "customType": false
+                },
+                {
+                    "name": "RemindTime",
+                    "type": "AMAZON.TIME",
+                    "prompt": "What time of the day would you like to be reminded?",
+                    "required": true,
+                    "customType": false
+                }
+            ],
+            "utterances": [
+                "Create new daily reminder",
+                "Remind daily",
+                "Can I make a new daily reminder please"
+            ],
+            "intentName": "DailyReminder",
+            "newSlotTypes": [
+                {
+                    "slotType": "ReminderTypeValue",
+                    "slotTypeDescription": "Types of reminders",
+                    "slotValues": [
+                        "health",
+                        "to-do tasks",
+                        "past facts"
+                    ]
+                }
+            ]
+        }
+    ],
+    "outputVoice": "Matthew",
+    "sessionTimeout": 5,
+    "coppa": false
+}
