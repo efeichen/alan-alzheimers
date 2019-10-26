@@ -21,11 +21,11 @@ App => {
       welcomeMessage="Welcome, how can I help you today?"
       onComplete={this.handleComplete.bind(this)}
       clearOnComplete={true}
+      voiceEnabled={true}
+      textEnabled={false}
     />
   )
 }
-
-
 
 function handleComplete(err, confirmation) {
   if(err) {
