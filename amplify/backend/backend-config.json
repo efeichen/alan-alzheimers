@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"alanalzheimers5509cd48": {
+		"alanalzheimersb20d6231": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": []
