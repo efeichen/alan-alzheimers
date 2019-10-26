@@ -4,12 +4,38 @@ import './App.css';
 import Amplify, { Storage, Predictions } from 'aws-amplify';
 import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 
+import { ChatBot } from 'aws-amplify-react';
+
 import awsconfig from './aws-exports';
 
 import mic from 'microphone-stream';
 
 Amplify.configure(awsconfig);
 Amplify.addPluggable(new AmazonAIPredictionsProvider());
+
+App => {
+  return (
+    <ChatBot
+      title="My React Bot"
+      botName="BookTripBotMOBILEHUB"
+      welcomeMessage="Welcome, how can I help you today?"
+      onComplete={this.handleComplete.bind(this)}
+      clearOnComplete={true}
+    />
+  )
+}
+
+
+
+function handleComplete(err, confirmation) {
+  if(err) {
+    alert("Bot conversation has failed")
+    return;
+  }
+
+  alert("Success: " + JSON.stringify(confirmation, null, 2));
+  return "Thank you"
+}
 
 function TextIdentification() {
   const [response, setResponse] = useState("You can add a photo by uploading direcly from the app ")
