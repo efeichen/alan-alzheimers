@@ -32,5 +32,22 @@
                 "alanalzheimersb157ba6e": {}
             }
         }
+    },
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-alan-alzheimers-dev-134128-authRole",
+            "UnauthRoleArn": "arn:aws:iam::386664965172:role/amplify-alan-alzheimers-dev-134128-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::386664965172:role/amplify-alan-alzheimers-dev-134128-authRole",
+            "Region": "ap-southeast-2",
+            "DeploymentBucketName": "amplify-alan-alzheimers-dev-134128-deployment",
+            "UnauthRoleName": "amplify-alan-alzheimers-dev-134128-unauthRole",
+            "StackName": "amplify-alan-alzheimers-dev-134128",
+            "StackId": "arn:aws:cloudformation:ap-southeast-2:386664965172:stack/amplify-alan-alzheimers-dev-134128/fd97e660-f830-11e9-a293-06d8fa8d4244"
+        },
+        "categories": {
+            "auth": {
+                "alanalzheimersb157ba6e": {}
+            }
+        }
     }
 }
