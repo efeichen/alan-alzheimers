@@ -9,33 +9,45 @@ import { ChatBot } from 'aws-amplify-react';
 import awsconfig from './aws-exports';
 
 import mic from 'microphone-stream';
+import { ReactComponent } from '*.svg';
 
 Amplify.configure(awsconfig);
 Amplify.addPluggable(new AmazonAIPredictionsProvider());
 
-App => {
-  return (
-    <ChatBot
-      title="My React Bot"
-      botName="BookTripBotMOBILEHUB"
-      welcomeMessage="Welcome, how can I help you today?"
-      onComplete={this.handleComplete.bind(this)}
-      clearOnComplete={true}
-      voiceEnabled={true}
-      textEnabled={false}
-    />
-  )
-}
+class App extends Component {
 
-function handleComplete(err, confirmation) {
-  if(err) {
-    alert("Bot conversation has failed")
-    return;
+  handleComplete(err, confirmation) {
+    if(err) {
+      alert("Bot conversation has failed")
+      return;
+    }
+
+    alert("Success: " + JSON.stringify(confirmation, null, 2));
+    return "Thank you"
   }
 
-  alert("Success: " + JSON.stringify(confirmation, null, 2));
-  return "Thank you"
+  render() {
+    return (
+      <div className = "App">
+        <header className = "App-header">
+          <h1 className="App-title">CHATBOT TESTING</h1>
+        </header>
+        <ChatBot
+          title="My React Bot"
+          botName="BookTripBotMOBILEHUB"
+          welcomeMessage="Welcome, how can I help you today?"
+          onComplete={this.handleComplete.bind(this)}
+          clearOnComplete={true}
+          voiceEnabled={true}
+          textEnabled={false}
+          //conversationModeOn={true}
+        />
+      </div>
+    );
+  }
 }
+
+export default App;
 
 function TextIdentification() {
   const [response, setResponse] = useState("You can add a photo by uploading direcly from the app ")
