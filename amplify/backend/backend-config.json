@@ -1,0 +1,16 @@
+{
+	"auth": {
+		"alanalzheimerse524de82": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"predictions": {
+		"transcriptionc3e67f47": {
+			"providerPlugin": "awscloudformation",
+			"service": "Transcribe",
+			"convertType": "transcription"
+		}
+	}
+}
