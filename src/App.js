@@ -33,8 +33,8 @@ class App extends Component {
           <h1 className="App-title">CHATBOT TESTING</h1>
         </header>
         <ChatBot
-          title="My React Bot"
-          botName="BookTripBotMOBILEHUB"
+          title="Reminder Bot"
+          botName="Ally"
           welcomeMessage="Welcome, how can I help you today?"
           onComplete={this.handleComplete.bind(this)}
           clearOnComplete={true}
