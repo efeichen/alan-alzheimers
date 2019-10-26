@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "alanalzheimerse524de82_identitypool_e524de82",
+    "identityPoolName": "alanalzheimersb157ba6e_identitypool_b157ba6e",
     "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "alanale524de82",
-    "userPoolName": "alanalzheimerse524de82_userpool_e524de82",
+    "resourceNameTruncated": "alanalb157ba6e",
+    "userPoolName": "alanalzheimersb157ba6e_userpool_b157ba6e",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "alanale524de82_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "alanalb157ba6e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "alanalzheimerse524de82",
+    "resourceName": "alanalzheimersb157ba6e",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

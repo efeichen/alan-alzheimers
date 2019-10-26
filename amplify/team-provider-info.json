@@ -1,18 +1,18 @@
 {
-    "dev": {
+    "master": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-alan-alzheimers-dev-102008-authRole",
-            "UnauthRoleArn": "arn:aws:iam::512457680063:role/amplify-alan-alzheimers-dev-102008-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::512457680063:role/amplify-alan-alzheimers-dev-102008-authRole",
+            "AuthRoleName": "amplify-alan-alzheimers-master-112105-authRole",
+            "UnauthRoleArn": "arn:aws:iam::512457680063:role/amplify-alan-alzheimers-master-112105-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::512457680063:role/amplify-alan-alzheimers-master-112105-authRole",
             "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-alan-alzheimers-dev-102008-deployment",
-            "UnauthRoleName": "amplify-alan-alzheimers-dev-102008-unauthRole",
-            "StackName": "amplify-alan-alzheimers-dev-102008",
-            "StackId": "arn:aws:cloudformation:us-west-2:512457680063:stack/amplify-alan-alzheimers-dev-102008/dbfd0f60-f814-11e9-bd7e-061bf9db5e72"
+            "DeploymentBucketName": "amplify-alan-alzheimers-master-112105-deployment",
+            "UnauthRoleName": "amplify-alan-alzheimers-master-112105-unauthRole",
+            "StackName": "amplify-alan-alzheimers-master-112105",
+            "StackId": "arn:aws:cloudformation:us-west-2:512457680063:stack/amplify-alan-alzheimers-master-112105/60719fb0-f81d-11e9-b42c-0294f1fd1ce8"
         },
         "categories": {
             "auth": {
-                "alanalzheimerse524de82": {}
+                "alanalzheimersb157ba6e": {}
             }
         }
     }
