@@ -1,0 +1,7 @@
+{
+    "tableName": "daily_reminder",
+    "partitionKeyName": "time",
+    "partitionKeyType": "S",
+    "sortKeyName": "days",
+    "sortKeyType": "S"
+}

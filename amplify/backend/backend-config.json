@@ -18,5 +18,12 @@
 			"providerPlugin": "awscloudformation",
 			"build": true
 		}
+	},
+	"function": {},
+	"storage": {
+		"dynamod322a32e": {
+			"service": "DynamoDB",
+			"providerPlugin": "awscloudformation"
+		}
 	}
 }
