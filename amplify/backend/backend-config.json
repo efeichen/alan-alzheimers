@@ -13,13 +13,6 @@
 	},
 	"predictions": {},
 	"interactions": {
-		"lex029592a9": {
-			"service": "Lex",
-			"providerPlugin": "awscloudformation",
-			"build": true
-		}
-	},
-	"interactions": {
 		"lex4350bc6a": {
 			"service": "Lex",
 			"providerPlugin": "awscloudformation",
