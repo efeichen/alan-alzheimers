@@ -67,7 +67,9 @@ const VoiceButton = ({ onStop, addUtter }) => {
         setMicStream(null);
         setRecording(false);
 
-        const resultBuffer = audioBuffer.getData() || [];
+        const resultBuffer = audioBuffer.getData();
+
+        console.log(resultBuffer);
 
         if (typeof onStop === "function") {
             onStop(resultBuffer);
