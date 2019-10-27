@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import './VoiceButton.css';
-
 import Amplify from 'aws-amplify';
-
+import mic from 'microphone-stream';
 import awsconfig from '../aws-exports';
 
-import mic from 'microphone-stream';
 
 Amplify.configure(awsconfig);
 
-const VoiceButton = ({ onStop, addUtter }) => {
+const VoiceButton = ({ onStop }) => {
     const [recording, setRecording] = useState(false);
     const [micStream, setMicStream] = useState();
     const [audioBuffer] = useState(
