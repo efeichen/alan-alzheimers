@@ -7,29 +7,13 @@
             "Region": "us-west-2",
             "DeploymentBucketName": "amplify-alan-alzheimers-master-112105-deployment",
             "UnauthRoleName": "amplify-alan-alzheimers-master-112105-unauthRole",
-            "StackName": "amplify-alan-alzheimers-master-112105",
+            "StackName": "amplify-alan-alzheimers-xmaster-112105",
             "StackId": "arn:aws:cloudformation:us-west-2:512457680063:stack/amplify-alan-alzheimers-master-112105/60719fb0-f81d-11e9-b42c-0294f1fd1ce8"
         },
         "categories": {
             "auth": {
-                "alanalzheimersb20d6231": {}
-            }
-        }
-    },
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-alan-alzheimers-dev-134128-authRole",
-            "UnauthRoleArn": "arn:aws:iam::386664965172:role/amplify-alan-alzheimers-dev-134128-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::386664965172:role/amplify-alan-alzheimers-dev-134128-authRole",
-            "Region": "ap-southeast-2",
-            "DeploymentBucketName": "amplify-alan-alzheimers-dev-134128-deployment",
-            "UnauthRoleName": "amplify-alan-alzheimers-dev-134128-unauthRole",
-            "StackName": "amplify-alan-alzheimers-dev-134128",
-            "StackId": "arn:aws:cloudformation:ap-southeast-2:386664965172:stack/amplify-alan-alzheimers-dev-134128/fd97e660-f830-11e9-a293-06d8fa8d4244"
-        },
-        "categories": {
-            "auth": {
-                "alanalzheimersb157ba6e": {}
+                "alanalzheimersb157ba6e": {},
+                "cognitoe1daef02": {}
             }
         }
     },

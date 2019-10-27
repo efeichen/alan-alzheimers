@@ -1,0 +1,26 @@
+{
+    "resourceName": "lex4350bc6a",
+    "botName": "alan_master",
+    "intents": [
+        {
+            "slots": [
+                {
+                    "name": "test",
+                    "type": "AMAZON.Actor",
+                    "prompt": "test",
+                    "required": true,
+                    "customType": false
+                }
+            ],
+            "utterances": [
+                "test",
+                "test"
+            ],
+            "intentName": "test",
+            "newSlotTypes": []
+        }
+    ],
+    "outputVoice": "Matthew",
+    "sessionTimeout": 5,
+    "coppa": false
+}

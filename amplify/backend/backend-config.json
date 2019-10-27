@@ -4,11 +4,23 @@
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": []
+		},
+		"cognitoe1daef02": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
 		}
 	},
 	"predictions": {},
 	"interactions": {
 		"lex029592a9": {
+			"service": "Lex",
+			"providerPlugin": "awscloudformation",
+			"build": true
+		}
+	},
+	"interactions": {
+		"lex4350bc6a": {
 			"service": "Lex",
 			"providerPlugin": "awscloudformation",
 			"build": true

@@ -32,7 +32,7 @@ class App extends Component {
                 <ChatBot
                     title="My Bot"
                     theme={myTheme}
-                    botName="alan_master"
+                    botName="alan_master_master"
                     welcomeMessage="Welcome, how can I help you today?"
                     onComplete={this.handleComplete.bind(this)}
                     clearOnComplete={true}
