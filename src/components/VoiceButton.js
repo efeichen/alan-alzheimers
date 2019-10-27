@@ -1,4 +1,5 @@
 import React from 'react';
+import 'VoiceButton.css';
 
 const VoiceButton = () => {
     return (

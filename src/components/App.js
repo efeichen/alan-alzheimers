@@ -2,6 +2,7 @@ import React from 'react';
 import awsconfig from '../aws-exports';
 import Navbar from './Navbar';
 import VoiceButton from './VoiceButton';
+import './App.css';
 
 import Amplify, { Interactions } from 'aws-amplify';
 import { ChatBot, AmplifyTheme } from 'aws-amplify-react';
