@@ -1,47 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import awsconfig from '../aws-exports';
+import Navbar from './Navbar';
+import VoiceButton from './VoiceButton';
+
 import Amplify, { Interactions } from 'aws-amplify';
 import { ChatBot, AmplifyTheme } from 'aws-amplify-react';
-import awsconfig from '../aws-exports';
+import { LexRuntime } from 'aws-sdk/clients/all';
 
 Amplify.configure(awsconfig);
 
-// Imported default theme can be customized by overloading attributes
-const myTheme = {
-    ...AmplifyTheme,
-    sectionHeader: {
-        ...AmplifyTheme.sectionHeader,
-        backgroundColor: '#ff6600'
-    }
-};
+const botName = awsconfig.aws_bots_config[0].name;
+const lex = new LexRuntime();
+lex.postContent()
 
-class App extends Component {
 
-    handleComplete(err, confirmation) {
-        if (err) {
-            alert('Bot conversation failed')
-            return;
-        }
+const response = Interactions.send(botName, "hello");
 
-        alert('Success: ' + JSON.stringify(confirmation, null, 2));
-        return 'Trip booked. Thank you! what would you like to do next?';
-    }
+response.then(res => console.log(res));
 
-    render() {
-        return (
-            <div className="App">
-                <ChatBot
-                    title="My Bot"
-                    theme={myTheme}
-                    botName="alan_master_master"
-                    welcomeMessage="Welcome, how can I help you today?"
-                    onComplete={this.handleComplete.bind(this)}
-                    clearOnComplete={true}
-                    conversationModeOn={false}
-                    voiceEnabled={true}
-                />
-            </div>
-        );
-    }
+const App = () => {
+    return (
+        <div>
+            <VoiceButton></VoiceButton>
+            <Navbar></Navbar>
+        </div>
+    );
 }
 
 export default App;
