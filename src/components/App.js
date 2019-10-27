@@ -21,7 +21,7 @@ response.then(res => console.log(res));
 
 const App = () => {
     return (
-        <div>
+        <div className="app">
             <VoiceButton></VoiceButton>
             <Navbar></Navbar>
         </div>

@@ -1,9 +1,13 @@
 import React from 'react';
-import 'VoiceButton.css';
+import './VoiceButton.css';
 
 const VoiceButton = () => {
     return (
-        <button className="voice">Assistant</button>
+        <button className="voice">
+            <i className="material-icons">
+                keyboard_voice
+            </i>
+        </button>
     );
 }
 
