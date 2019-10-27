@@ -156,8 +156,8 @@ const App = () => {
                     })
                 }
             </section>
-            <input name="msg" onChange={onChange} value={msg}></input>
-            <button onClick={() => updateChat(msg)}>Send</button>
+            <input name="msg" onChange={onChange} value={msg} className="msgBox"></input>
+            <button onClick={() => updateChat(msg)} className="sendBtn">Send</button>
             <VoiceButton onStop={exportBuffer}></VoiceButton>
             <Navbar></Navbar>
         </div>

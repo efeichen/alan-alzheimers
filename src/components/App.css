@@ -143,3 +143,12 @@ body {
   left: -50px;
   transform: rotateY(180deg);
 }
+
+.msgBox {
+  margin: 0 23rem;
+  margin-bottom: 1rem;
+}
+
+.sendBtn {
+  margin: 0 40rem;
+}
