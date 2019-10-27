@@ -5,6 +5,7 @@
     border-radius: 50%;
     border: none;
     background: #c4c4c4;;
+    cursor: pointer;
 }
 
 .voice i {
