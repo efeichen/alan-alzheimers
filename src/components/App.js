@@ -37,6 +37,7 @@ class App extends Component {
                     onComplete={this.handleComplete.bind(this)}
                     clearOnComplete={true}
                     conversationModeOn={false}
+                    voiceEnabled={true}
                 />
             </div>
         );
