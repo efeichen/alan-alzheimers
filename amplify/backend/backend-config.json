@@ -11,7 +11,13 @@
 			"dependsOn": []
 		}
 	},
-	"predictions": {},
+	"predictions": {
+		"transcriptionb911e292": {
+			"providerPlugin": "awscloudformation",
+			"service": "Transcribe",
+			"convertType": "transcription"
+		}
+	},
 	"interactions": {
 		"lex4350bc6a": {
 			"service": "Lex",

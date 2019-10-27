@@ -8,6 +8,8 @@
     "@aws-amplify/pubsub": "^1.2.3",
     "aws-amplify": "^1.2.3",
     "aws-amplify-react": "^2.5.3",
+    "aws-sdk": "^2.556.0",
+    "microphone-stream": "^5.0.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
