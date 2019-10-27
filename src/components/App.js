@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import VoiceButton from './VoiceButton';
 import './App.css';
 
-import AWS from 'aws-sdk';
 import Amplify, { Interactions, Predictions } from 'aws-amplify';
 import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 
@@ -12,7 +11,6 @@ Amplify.configure(awsconfig);
 Amplify.addPluggable(new AmazonAIPredictionsProvider());
 
 const botName = awsconfig.aws_bots_config[0].name;
-const lexRuntime = new AWS.LexRuntime();
 
 
 const App = () => {
