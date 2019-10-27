@@ -150,7 +150,7 @@ const App = () => {
                         return (
                             <div>
                                 <div key={i} className="message from">{n.msg}</div>
-                                <div key={i} className="message to">{n.resp}</div>
+                                <div key={i + 1} className="message to">{n.resp}</div>
                             </div>
                         )
                     })
